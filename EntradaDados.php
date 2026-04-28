@@ -1,27 +1,27 @@
 <?php
 
-// função dolar_para_real($valor, $cotação)
-// função euro_para_real($valor, $cotação)
-// função peso_para_real($valor, $cotação)
-// função libra_para_real($valor, $cotação)
-// função iene_para_real($valor, $cotação)
-require_once "bibliotecaFuncoes.php";
 
+require_once "bibliotecaFuncoes.php";
+//funcoes
 use function conversor\dolar_para_real;
 use function conversor\euro_para_real;
 use function conversor\peso_para_real;
 use function conversor\libra_para_real;
 use function conversor\iene_para_real;
 
-echo "dolar para real: ", dolar_para_real(8, 5);
+//areas
+use function geometrica\areaQuadrado;
+use function geometrica\areaRetangulo;
+use function geometrica\areaTriangulo;
+use function geometrica\areaCirculo;
+use function geometrica\areaTrapezio;
 
-echo "\neuro para real: ", euro_para_real(10, 5.82);
+echo "\narea do quadrado: ", areaQuadrado(5);
 
+echo "\narea do retangulo: ", areaRetangulo(9, 6);
 
-echo "\npeso argentino para real: ", peso_para_real(17, 0.0035);
+echo "\narea do triangulo: ", areaTriangulo(19, 16);
 
+echo "\narea do circulo: ", areaCirculo(18);
 
-echo "\nlibra para real: ", libra_para_real(12, 6.71);
-
-
-echo "\niene para real: ", iene_para_real(20000, 0.031);
+echo "\niene para real: ", areaTrapezio(18, 23, 16);

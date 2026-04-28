@@ -27,3 +27,31 @@ namespace conversor {
         return $valor * $cotacao;
     }
 }
+
+
+
+namespace geometrica {
+    function areaQuadrado($lado)
+    {
+        return $lado * $lado;
+    }
+
+    function areaRetangulo($base, $altura)
+    {
+        return $base * $altura;
+    }
+
+    function areaTriangulo($base, $altura)
+    {
+        return $base * $altura / 2;
+    }
+
+    function areaCirculo($raio)
+    {
+        return $raio * 3.14;
+    }
+    function areaTrapezio($baseMaior, $baseMenor, $altura)
+    {
+        return $baseMaior + $baseMenor * $altura;
+    }
+}
