@@ -55,3 +55,34 @@ namespace geometrica {
         return $baseMaior + $baseMenor * $altura;
     }
 }
+
+namespace saude {
+    function calcularIMC($peso, $altura)
+    {
+        return $peso / ($altura * $altura);
+    }
+    function ValorIdealAgua($peso)
+    {
+        return $peso * 35;
+    }
+    function FrequeciaMaxima($idade)
+    {
+        return 208 - 0.7 * $idade;
+    }
+    function LibrasParaQuilos($libras)
+    {
+        return $libras * 0.4536;
+    }
+    function CaloriasBasais($peso, $altura, $idade, $sexo)
+    {
+        if ($sexo == 'Masculino') {
+            // Fórmula Para Homens
+            $calorias = (10 * $peso) + (6.25 * $altura) - (5 * $idade) + 5;
+        } else {
+            // Fórmula Para Mulheres
+            $calorias = (10 * $peso) + (6.25 * $altura) - (5 * $idade) - 161;
+        }
+
+        return $calorias;
+    }
+}

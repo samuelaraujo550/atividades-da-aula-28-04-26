@@ -16,12 +16,20 @@ use function geometrica\areaTriangulo;
 use function geometrica\areaCirculo;
 use function geometrica\areaTrapezio;
 
-echo "\narea do quadrado: ", areaQuadrado(5);
+//saude
 
-echo "\narea do retangulo: ", areaRetangulo(9, 6);
+use function saude\calcularIMC;
+use function saude\ValorIdealAgua;
+use function saude\FrequeciaMaxima;
+use function saude\LibrasParaQuilos;
+use function saude\CaloriasBasais;
 
-echo "\narea do triangulo: ", areaTriangulo(19, 16);
+echo "\nO seu valor do seu IMC é: ", calcularImc(48, 1.66);
 
-echo "\narea do circulo: ", areaCirculo(18);
+echo "\nA sua quantidade miníma de água é de: ", ValorIdealAgua(45);
 
-echo "\niene para real: ", areaTrapezio(18, 23, 16);
+echo "\nA sua frequência cardíaca máxima é: ", FrequeciaMaxima(19);
+
+echo "\nO seu peso de libras para quilos é: ", LibrasParaQuilos(198.416);
+
+echo "\nA suas calorías basais é de: ", CaloriasBasais(48, 19, "masculino", 1.66);
